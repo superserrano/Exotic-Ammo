@@ -1,0 +1,1999 @@
+<!--
+	Exotic Ammo by BoxTurtle Games
+	What you can can do:
+		-Change this mod however you want
+		-Redistribute this mod as part of a modpack (give credit :) )
+		-Share with friends
+	What you cannot do:
+		-Reupload to any site and take credit as the original author
+		-Make money from this mod
+-->
+
+<config>
+<append xpath="/items">
+<!--	GLASS PROJECTILES	-->
+<item name="resourceGlassBulletTip">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mglass"/>
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="UnlockedBy" value="perkExoticAmmoProjectiles"/> 
+</item>
+<item name="resourceArrowHeadGlass">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mglass"/>
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="UnlockedBy" value="perkExoticAmmoProjectiles"/> <!-- BOOK_PERK -->
+</item>
+<item name="resourceRocketTipGlass">
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+</item>
+<!--	FIRE PROJECTILES	-->
+<item name="resourceFireBulletTip">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="UnlockedBy" value="perkExoticAmmoProjectiles"/> <!-- BOOK_PERK -->
+</item>
+<item name="resourceRocketTipFire">
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+</item>
+<!--	SHOCK PROJECTILES	-->
+<item name="resourceShockBulletTip">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/><!--    TODO   -->
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="UnlockedBy" value="perkExoticAmmoProjectiles"/> <!-- BOOK_PERK -->
+</item>
+<item name="resourceArrowHeadShock">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="UnlockedBy" value="perkExoticAmmoProjectiles"/> <!-- BOOK_PERK -->
+</item>
+<item name="resourceRocketTipShock">
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+</item>
+<!--	SOFT PROJECTILES	-->
+<item name="resourceSoftBulletTip">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/><!--    TODO   -->
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="40"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="UnlockedBy" value="perkExoticAmmoProjectiles"/> <!-- BOOK_PERK -->
+</item>
+<item name="resourceRocketTipSoft">
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+</item>
+<!--	GLASS BULLETS	-->
+<item name="ammo9mmBulletGlass">
+	<property name="Tags" value="ammo,ammo9mm"/>
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="CustomIcon" value="ammo9mmBulletGlass"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mglass"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="300"/> <!-- STK ammo high -->
+	<property name="EconomicValue" value="14"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="UnlockedBy" value="perkExoticAmmo9mm"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo9mmBulletGlass" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="32" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="18" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+    
+	<effect_group tiered="false">
+		<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+	</effect_group>
+    <effect_group tiered="false">
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+	</effect_group>
+</item>
+<item name="ammo762mmBulletGlass">
+	<property name="Extends" value="ammo9mmBulletGlass"/>
+	<property name="Tags" value="ammo762mm"/>
+    <property name="CustomIcon" value="ammo762mmBulletGlass"/>
+	<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+	<property name="EconomicValue" value="16"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmo762mm"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo762mmBulletGlass" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="47" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="16" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+	</effect_group>
+    <effect_group tiered="false">
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+	</effect_group>
+</item>
+<item name="ammo44MagnumBulletGlass">
+	<property name="Extends" value="ammo9mmBulletGlass"/>
+	<property name="Tags" value="ammo44Mag"/>
+    <property name="CustomIcon" value="ammo44MagnumBulletGlass"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmo44Magnum"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo44MagnumBulletGlass" tiered="false">
+		<!-- To split up the revolver and DVulture I'm providing base_set that the specific perk passives can latch on to -->
+		<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="12" tags="barrelExplosive"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+	</effect_group>
+    <effect_group tiered="false">
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+	</effect_group>
+</item>
+<item name="ammoShotgunSlugGlass">
+	<property name="Tags" value="ammo,shotgun,ammoShells"/>
+	<property name="DisplayType" value="ammoShotgun"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapPolymers"/>
+	<property name="Stacknumber" value="150"/> 
+	<property name="EconomicValue" value="20"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="UnlockedBy" value="perkExoticAmmoSlugs"/> 
+	
+	<effect_group name="ammoShotgunSlugGlass" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="102" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="200" tags="wood"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="1" tags="perkBoomstick"/>
+		<passive_effect name="MaxRange" operation="base_set" value="18" tags="perkBoomstick"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="9" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+
+		</effect_group>
+
+	<effect_group tiered="false">
+		<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+	</effect_group>
+    <effect_group tiered="false">
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+	</effect_group> 
+</item>
+<item name="ammoArrowGlass">
+	<property name="Extends" value="ammoArrowIron"/>
+	<property name="Tags" value="ammoGlass"/>
+	<property name="DisplayType" value="ammoArrow"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_steelPrefab.prefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="TraderStageTemplate" value="arrowsTier2"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="UnlockedBy" value="perkExoticAmmoArrowsBolts"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammoArrowGlass" tiered="false"> <!-- ammoArrowGlass -->
+		<passive_effect name="EntityDamage" operation="base_set" value="42" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="55" tags="perkArchery"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+	</effect_group>
+    <effect_group tiered="false">
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+	</effect_group>
+</item>
+<item name="ammoCrossbowBoltGlass">
+	<property name="Extends" value="ammoCrossbowBoltIron"/>
+	<property name="Tags" value="ammoGlass"/>
+	<property name="DisplayType" value="ammoArrow"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/bolt_steelPrefab.prefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="TraderStageTemplate" value="arrowsTier2"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value=".75"/>
+	<property name="UnlockedBy" value="perkExoticAmmoArrowsBolts"/> <!-- BOOK_PERK -->	
+	
+	<effect_group name="ammoCrossbowBoltGlass" tiered="false"> <!-- ammoCrossbowBoltGlass -->
+		<passive_effect name="EntityDamage" operation="base_set" value="63" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5" tags="perkArchery"/>
+	</effect_group>
+    
+	<effect_group tiered="false">
+		<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+	</effect_group>
+    <effect_group tiered="false">
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+	</effect_group>
+</item>
+<item name="thrownGrenadeContactGlass">
+	<property name="Tags" value="ammo,weapon,attPerception,perkDemolitionsExpert,explosivesSkill"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="DisplayType" value="ammoGrenadeContact"/>
+	<property name="Class" value="ItemClassTimeBomb"/>
+	<property name="HoldType" value="57"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+	<property name="DropScale" value="2.5"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="25"/>
+	<property name="EconomicValue" value="41"/>
+	<property name="TraderStageTemplate" value="baseTier2"/>
+	<property name="Weight" value="0"/>
+	<property name="Explosion.ParticleIndex" value="13"/>
+	<property name="Explosion.RadiusBlocks" value="4"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.BlastPower" value="75"/> <!-- (int,100) how far ragdolls and such are flung -->
+	<property name="FuseTime" value="6"/>
+	<property name="FusePrimeOnActivate" value="true"/>
+	<property name="ExplodeOnHit" value="true"/>
+	<property name="StickPercent" value=".5"/>
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/><!-- perkDemolitionsExpert,thrownGrenadeContactSchematic, -->
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="SoundUnholster" value="grenade_unholster"/>
+	<property class="Action0">
+		<property name="Class" value="ThrowAway"/>
+		<!-- <property name="Hitmask_override" value="Arrow"/> unfortunately this cannot work without a serious rewrite of the hitmask system -->
+		<property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Throw_strength_default" value="8"/>
+		<property name="Throw_strength_max" value="50"/>
+		<property name="Max_strain_time" value="1.25"/>
+		<property name="Sound_start" value="grenade_throw"/>
+		<property name="Gravity" value="-5"/>
+        <property name="triggerEffectTriggerPullDualsense" value="ShotgunTrigger"/>
+        <property name="triggerEffectTriggerPullXbox" value="ShotgunTrigger"/>
+        <property name="triggerEffectShootDualsense" value="ShotgunShoot"/>
+        <property name="triggerEffectShootXbox" value="PistolShoot"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Activate"/>
+		<property name="Delay" value="1"/>
+		<property name="Sound_start" value="grenade_pullpin"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	</property>
+	<property name="ThrowableDecoy" value="true"/>
+	<effect_group tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="150" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="5"/>
+	</effect_group>
+
+    <effect_group tiered="false">
+        <requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+            <triggered_effect trigger="onSelfExplosionDamagedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+    </effect_group>
+    
+    <effect_group tiered="false">
+        <requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+            <triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+    </effect_group>
+</item>
+<item name="ammoJunkTurretGlass">
+	<property name="Tags" value="ammo"/>
+	<property name="DisplayType" value="ammoJunkTurretRegular"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="3"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Robotics"/>
+	<property name="UnlockedBy" value="perkExoticAmmoJunkTurret"/>
+	
+	<effect_group name="ammoJunkTurretGlass" tiered="false">
+		<passive_effect name="MaxRange" operation="base_set" value="15" tags="perkTurrets"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="10" tags="perkTurrets"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkTurrets"/>
+
+		<passive_effect name="EntityDamage" operation="base_set" value="11.8" tags="perkTurrets"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkTurrets"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="105.6" tags="turretRanged"/>
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkTurrets"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5" tags="perkTurrets"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+	</effect_group>
+
+    <effect_group tiered="false">
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+	</effect_group>
+</item>
+<item name="ammoRocketGlass">
+	<property name="Extends" value="ammoRocketHE"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/>
+	<property class="Action1">
+		<property name="Explosion.RadiusBlocks" value="3"/> <!-- damage radius for blocks -->
+		<property name="Explosion.RadiusEntities" value="6"/> <!-- damage radius for entities -->
+		<property name="Explosion.DamageBonus.stone" value=".1"/>
+		<property name="Explosion.DamageBonus.metal" value=".05"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value=".5"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+	</property>
+	<effect_group name="ammoRocketFrag" tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="20" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="700" tags="perkDemolitionsExpert"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="6"/>
+	</effect_group>
+	<effect_group tiered="false">
+        <requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+            <triggered_effect trigger="onSelfExplosionDamagedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+    </effect_group>
+    
+    <effect_group tiered="false">
+        <requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+            <triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+    </effect_group>
+</item>
+<!--	FIRE BULLETS	-->
+<item name="ammo9mmBulletFire">
+	<property name="Tags" value="ammo,ammo9mm"/>
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="CustomIcon" value="ammo9mmBulletFire"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="300"/> 
+	<property name="EconomicValue" value="14"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="UnlockedBy" value="perkExoticAmmo9mm"/>
+	
+	<effect_group name="ammo9mmBulletFire" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="32" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="18" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+
+    <effect_group tiered="false">
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" range="2.7" buff="buffBurningMolotov">			
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+
+		<display_value name="dExDamageFire" value="250"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="3"/>
+		<display_value name="dDuration" value="16"/>
+
+		<triggered_effect trigger="onSelfWaterSubmerge" action="ResetHeldItem"/>
+	</effect_group>
+</item>
+<item name="ammo762mmBulletFire">
+	<property name="Extends" value="ammo9mmBulletFire"/>
+	<property name="Tags" value="ammo762mm"/>
+    <property name="CustomIcon" value="ammo762mmBulletFire"/>
+	<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+	<property name="EconomicValue" value="16"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmo762mm"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo762mmBulletFire" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="47" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="16" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" range="2.7" buff="buffBurningMolotov">			
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+
+		<display_value name="dExDamageFire" value="250"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="3"/>
+		<display_value name="dDuration" value="16"/>
+
+		<triggered_effect trigger="onSelfWaterSubmerge" action="ResetHeldItem"/>
+	</effect_group>
+
+</item>
+<item name="ammo44MagnumBulletFire">
+	<property name="Extends" value="ammo9mmBulletFire"/>
+	<property name="Tags" value="ammo44Mag"/>
+    <property name="CustomIcon" value="ammo44MagnumBulletFire"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmo44Magnum"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo44MagnumBulletFire" tiered="false">
+		<!-- To split up the revolver and DVulture I'm providing base_set that the specific perk passives can latch on to -->
+		<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="12" tags="barrelExplosive"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" range="2.7" buff="buffBurningMolotov">			
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+
+		<display_value name="dExDamageFire" value="250"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="3"/>
+		<display_value name="dDuration" value="16"/>
+
+		<triggered_effect trigger="onSelfWaterSubmerge" action="ResetHeldItem"/>
+	</effect_group>
+</item>
+<item name="ammoShotgunSlugFire">
+	<property name="Tags" value="ammo,shotgun,ammoShells"/>
+	<property name="DisplayType" value="ammoShotgun"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapPolymers"/>
+	<property name="Stacknumber" value="150"/> 
+	<property name="EconomicValue" value="20"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="UnlockedBy" value="perkExoticAmmoSlugs"/> 
+	
+	<effect_group name="ammoShotgunSlugFire" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="102" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="200" tags="wood"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="1" tags="perkBoomstick"/>
+		<passive_effect name="MaxRange" operation="base_set" value="18" tags="perkBoomstick"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="9" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+
+		</effect_group>
+			<effect_group tiered="false">
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" range="2.7" buff="buffBurningMolotov">			
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+
+		<display_value name="dExDamageFire" value="250"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="3"/>
+		<display_value name="dDuration" value="16"/>
+
+		<triggered_effect trigger="onSelfWaterSubmerge" action="ResetHeldItem"/>
+	</effect_group>
+</item>
+<item name="thrownGrenadeContactFire">
+	<property name="Tags" value="ammo,weapon,attPerception,perkDemolitionsExpert,explosivesSkill"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="DisplayType" value="ammoGrenadeContact"/>
+	<property name="Class" value="ItemClassTimeBomb"/>
+	<property name="HoldType" value="57"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+	<property name="DropScale" value="2.5"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="25"/>
+	<property name="EconomicValue" value="41"/>
+	<property name="TraderStageTemplate" value="baseTier2"/>
+	<property name="Weight" value="0"/>
+	<property name="Explosion.ParticleIndex" value="13"/>
+	<property name="Explosion.RadiusBlocks" value="4"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.BlastPower" value="75"/> <!-- (int,100) how far ragdolls and such are flung -->
+	<property name="FuseTime" value="6"/>
+	<property name="FusePrimeOnActivate" value="true"/>
+	<property name="ExplodeOnHit" value="true"/>
+	<property name="StickPercent" value=".5"/>
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/><!-- perkDemolitionsExpert,thrownGrenadeContactSchematic, -->
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="SoundUnholster" value="grenade_unholster"/>
+	<property class="Action0">
+		<property name="Class" value="ThrowAway"/>
+		<!-- <property name="Hitmask_override" value="Arrow"/> unfortunately this cannot work without a serious rewrite of the hitmask system -->
+		<property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Throw_strength_default" value="8"/>
+		<property name="Throw_strength_max" value="50"/>
+		<property name="Max_strain_time" value="1.25"/>
+		<property name="Sound_start" value="grenade_throw"/>
+		<property name="Gravity" value="-5"/>
+        <property name="triggerEffectTriggerPullDualsense" value="ShotgunTrigger"/>
+        <property name="triggerEffectTriggerPullXbox" value="ShotgunTrigger"/>
+        <property name="triggerEffectShootDualsense" value="ShotgunShoot"/>
+        <property name="triggerEffectShootXbox" value="PistolShoot"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Activate"/>
+		<property name="Delay" value="1"/>
+		<property name="Sound_start" value="grenade_pullpin"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	</property>
+	<property name="ThrowableDecoy" value="true"/>
+	<effect_group tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="150" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="5"/>
+		
+   		<triggered_effect trigger="onSelfExplosionDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" range="2.7" buff="buffBurningMolotov">			
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+
+		<display_value name="dExDamageFire" value="250"/>
+
+		<!-- <passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/> -->
+
+		<!-- <display_value name="dExRadius" value="3"/> -->
+		<display_value name="dDuration" value="16"/>
+
+		<triggered_effect trigger="onSelfWaterSubmerge" action="ResetHeldItem"/>
+	</effect_group>
+	<!-- <effect_group tiered="false">
+
+	</effect_group> -->
+</item>
+<item name="ammoJunkTurretFire">
+	<property name="Tags" value="ammo"/>
+	<property name="DisplayType" value="ammoJunkTurretRegular"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="3"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Robotics"/>
+	<property name="UnlockedBy" value="perkExoticAmmoJunkTurret"/>
+	
+	<effect_group name="ammoJunkTurretFire" tiered="false">
+		<passive_effect name="MaxRange" operation="base_set" value="15" tags="perkTurrets"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="10" tags="perkTurrets"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkTurrets"/>
+
+		<passive_effect name="EntityDamage" operation="base_set" value="11.8" tags="perkTurrets"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkTurrets"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="105.6" tags="turretRanged"/>
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkTurrets"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5" tags="perkTurrets"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" range="2.7" buff="buffBurningMolotov">			
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+
+		<display_value name="dExDamageFire" value="250"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="3"/>
+		<display_value name="dDuration" value="16"/>
+
+		<triggered_effect trigger="onSelfWaterSubmerge" action="ResetHeldItem"/>
+	</effect_group>
+</item>
+<item name="ammoRocketFire">
+	<property name="Extends" value="ammoRocketHE"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/>
+	
+	<property class="Action1">
+		<property name="Explosion.RadiusBlocks" value="3"/> <!-- damage radius for blocks -->
+		<property name="Explosion.RadiusEntities" value="6"/> <!-- damage radius for entities -->
+		<property name="Explosion.DamageBonus.stone" value=".1"/>
+		<property name="Explosion.DamageBonus.metal" value=".05"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value=".5"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+	</property>
+	<effect_group name="ammoRocketFire" tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="20" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="700" tags="perkDemolitionsExpert"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="6"/>
+
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+			<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" range="2.7" buff="buffBurningMolotov">			
+			<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+		</triggered_effect>
+
+		<display_value name="dExDamageFire" value="250"/>
+
+		<display_value name="dDuration" value="16"/>
+
+		<triggered_effect trigger="onSelfWaterSubmerge" action="ResetHeldItem"/>
+	</effect_group>
+
+</item>
+<!--	HIGH DENSITY BULLETS	-->
+<item name="ammo9mmBulletHighDensity">
+	<property name="Tags" value="ammo,ammo9mm"/>	
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="CustomIcon" value="ammo9mmBulletHighDensity"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="300"/>
+	<property name="EconomicValue" value="14"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="UnlockedBy" value="perkExoticAmmo9mm"/>
+	
+	<effect_group name="ammo9mmBulletHighDensity" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="32" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="18" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+
+		<triggered_effect trigger="onSelfDamagedOther" action="Ragdoll" target="other" duration="2.5" force="400000"/>
+	</effect_group>
+</item>
+<item name="ammo762mmBulletHighDensity">
+	<property name="Extends" value="ammo9mmBulletHighDensity"/>
+	<property name="Tags" value="ammo762mm"/>
+    <property name="CustomIcon" value="ammo762mmBulletHighDensity"/>
+	<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+	<property name="EconomicValue" value="16"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmo762mm"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo762mmBulletHighDensity" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="47" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="16" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		<triggered_effect trigger="onSelfDamagedOther" action="Ragdoll" target="other" duration="2.5" force="400000"/>
+	</effect_group>
+
+</item>
+<item name="ammo44MagnumBulletHighDensity">
+	<property name="Extends" value="ammo9mmBulletHighDensity"/>
+	<property name="Tags" value="ammo44Mag"/>
+    <property name="CustomIcon" value="ammo44MagnumBulletHighDensity"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmo44Magnum"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo44MagnumBulletHighDensity" tiered="false">
+		<!-- To split up the revolver and DVulture I'm providing base_set that the specific perk passives can latch on to -->
+		<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="12" tags="barrelExplosive"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		
+		<triggered_effect trigger="onSelfDamagedOther" action="Ragdoll" target="other" duration="2.5" force="400000"/>
+	</effect_group>
+
+</item>
+<item name="ammoShotgunSlugHighDensity">
+	<property name="Tags" value="ammo,shotgun,ammoShells"/>
+	<property name="DisplayType" value="ammoShotgun"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapPolymers"/>
+	<property name="Stacknumber" value="150"/> 
+	<property name="EconomicValue" value="20"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="UnlockedBy" value="perkExoticAmmoSlugs"/> 
+
+	<effect_group name="ammoShotgunSlugHighDensity" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="102" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="200" tags="wood"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="1" tags="perkBoomstick"/>
+		<passive_effect name="MaxRange" operation="base_set" value="18" tags="perkBoomstick"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="9" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+
+		<triggered_effect trigger="onSelfDamagedOther" action="Ragdoll" target="other" duration="2.5" force="400000"/>
+		</effect_group>
+</item>
+<item name="thrownGrenadeContactHighDensity">
+	<property name="Tags" value="ammo,weapon,attPerception,perkDemolitionsExpert,explosivesSkill"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="DisplayType" value="ammoGrenadeContact"/>
+	<property name="Class" value="ItemClassTimeBomb"/>
+	<property name="HoldType" value="57"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+	<property name="DropScale" value="2.5"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="25"/>
+	<property name="EconomicValue" value="41"/>
+	<property name="TraderStageTemplate" value="baseTier2"/>
+	<property name="Weight" value="0"/>
+	<property name="Explosion.ParticleIndex" value="13"/>
+	<property name="Explosion.RadiusBlocks" value="4"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.BlastPower" value="75"/> <!-- (int,100) how far ragdolls and such are flung -->
+	<property name="FuseTime" value="6"/>
+	<property name="FusePrimeOnActivate" value="true"/>
+	<property name="ExplodeOnHit" value="true"/>
+	<property name="StickPercent" value=".5"/>
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/><!-- perkDemolitionsExpert,thrownGrenadeContactSchematic, -->
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="SoundUnholster" value="grenade_unholster"/>
+	<property class="Action0">
+		<property name="Class" value="ThrowAway"/>
+		<!-- <property name="Hitmask_override" value="Arrow"/> unfortunately this cannot work without a serious rewrite of the hitmask system -->
+		<property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Throw_strength_default" value="8"/>
+		<property name="Throw_strength_max" value="50"/>
+		<property name="Max_strain_time" value="1.25"/>
+		<property name="Sound_start" value="grenade_throw"/>
+		<property name="Gravity" value="-5"/>
+        <property name="triggerEffectTriggerPullDualsense" value="ShotgunTrigger"/>
+        <property name="triggerEffectTriggerPullXbox" value="ShotgunTrigger"/>
+        <property name="triggerEffectShootDualsense" value="ShotgunShoot"/>
+        <property name="triggerEffectShootXbox" value="PistolShoot"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Activate"/>
+		<property name="Delay" value="1"/>
+		<property name="Sound_start" value="grenade_pullpin"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	</property>
+	<property name="ThrowableDecoy" value="true"/>
+	<effect_group tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="150" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="5"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="Ragdoll" target="other" duration="2.5" force="400000"/>
+	</effect_group>
+
+</item>
+<item name="ammoJunkTurretHighDensity">
+	<property name="Tags" value="ammo"/>
+	<property name="DisplayType" value="ammoJunkTurretRegular"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="3"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Robotics"/>
+	<property name="UnlockedBy" value="perkExoticAmmoJunkTurret"/>
+	
+	<effect_group name="ammoJunkTurretHighDensity" tiered="false">
+		<passive_effect name="MaxRange" operation="base_set" value="15" tags="perkTurrets"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="10" tags="perkTurrets"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkTurrets"/>
+
+		<passive_effect name="EntityDamage" operation="base_set" value="11.8" tags="perkTurrets"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkTurrets"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="105.6" tags="turretRanged"/>
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkTurrets"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5" tags="perkTurrets"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration="2.5" force="400000"/>
+	</effect_group>
+
+</item>
+<item name="ammoRocketHighDensity">
+	<property name="Extends" value="ammoRocketHE"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/>
+	
+	<property class="Action1">
+		<property name="Explosion.RadiusBlocks" value="3"/> <!-- damage radius for blocks -->
+		<property name="Explosion.RadiusEntities" value="6"/> <!-- damage radius for entities -->
+		<property name="Explosion.DamageBonus.stone" value=".1"/>
+		<property name="Explosion.DamageBonus.metal" value=".05"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value=".5"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+	</property>
+	<effect_group name="ammoRocketFrag" tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="20" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="700" tags="perkDemolitionsExpert"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="6"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="Ragdoll" target="other" duration="2.5" force="400000"/>
+	</effect_group>
+</item>
+<!--	SHOCK BULLETS	-->
+<item name="ammo9mmBulletShock">
+	<property name="Tags" value="ammo,ammo9mm"/>	
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="CustomIcon" value="ammo9mmBulletShock"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="300"/>
+	<property name="EconomicValue" value="14"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="UnlockedBy" value="perkExoticAmmo9mm"/>
+	
+	<effect_group name="ammo9mmBulletShock" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="32" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="18" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+	</effect_group>
+</item>
+<item name="ammo762mmBulletShock">
+	<property name="Extends" value="ammo9mmBulletShock"/>
+	<property name="Tags" value="ammo762mm"/>
+    <property name="CustomIcon" value="ammo762mmBulletShock"/>
+	<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+	<property name="EconomicValue" value="16"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmo762mm"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo762mmBulletShock" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="47" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="16" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+	</effect_group>
+</item>
+<item name="ammo44MagnumBulletShock">
+	<property name="Extends" value="ammo9mmBulletShock"/>
+	<property name="Tags" value="ammo44Mag"/>
+    <property name="CustomIcon" value="ammo44MagnumBulletShock"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmo44Magnum"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo44MagnumBulletShock" tiered="false">
+		<!-- To split up the revolver and DVulture I'm providing base_set that the specific perk passives can latch on to -->
+		<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="12" tags="barrelExplosive"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+	</effect_group>
+</item>
+<item name="ammoShotgunSlugShock">
+	<property name="Tags" value="ammo,shotgun,ammoShells"/>
+	<property name="DisplayType" value="ammoShotgun"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapPolymers"/>
+	<property name="Stacknumber" value="150"/> 
+	<property name="EconomicValue" value="20"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="UnlockedBy" value="perkExoticAmmoSlugs"/> 
+	
+	<effect_group name="ammoShotgunSlugShock" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="102" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="200" tags="wood"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="1" tags="perkBoomstick"/>
+		<passive_effect name="MaxRange" operation="base_set" value="18" tags="perkBoomstick"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="9" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+
+		</effect_group>
+</item>
+<item name="ammoArrowShock">
+	<property name="Extends" value="ammoArrowIron"/>
+	<property name="Tags" value="ammo"/>
+	<property name="DisplayType" value="ammoArrow"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_steelPrefab.prefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="TraderStageTemplate" value="arrowsTier2"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="UnlockedBy" value="perkExoticAmmoArrowsBolts"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammoArrowShock" tiered="false"> <!-- ammoArrowShock -->
+		<passive_effect name="EntityDamage" operation="base_set" value="42" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="55" tags="perkArchery"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+
+	</effect_group>
+</item>
+<item name="ammoCrossbowBoltShock">
+	<property name="Extends" value="ammoCrossbowBoltIron"/>
+	<property name="Tags" value="ammo"/>
+	<property name="DisplayType" value="ammoArrow"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/bolt_steelPrefab.prefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="TraderStageTemplate" value="arrowsTier2"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="IsSticky" value="true"/>
+	<property name="StickyOffset" value=".13"/>
+	<property name="StickyColliderUp" value="2"/>
+	<property name="StickyColliderRadius" value=".05"/>
+	<property name="StickyColliderLength" value=".75"/>
+	<property name="UnlockedBy" value="perkExoticAmmoArrowsBolts"/> <!-- BOOK_PERK -->	
+	
+	<effect_group name="ammoCrossbowBoltShock" tiered="false"> <!-- ammoCrossbowBoltShock -->
+		<passive_effect name="EntityDamage" operation="base_set" value="63" tags="perkArchery"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/><display_value name="dTargetArmor" value="-.5"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+		<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5" tags="perkArchery"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+
+	</effect_group>
+</item>
+<item name="thrownGrenadeContactShock">
+	<property name="Tags" value="ammo,weapon,attPerception,perkDemolitionsExpert,explosivesSkill"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="DisplayType" value="ammoGrenadeContact"/>
+	<property name="Class" value="ItemClassTimeBomb"/>
+	<property name="HoldType" value="57"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+	<property name="DropScale" value="2.5"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="25"/>
+	<property name="EconomicValue" value="41"/>
+	<property name="TraderStageTemplate" value="baseTier2"/>
+	<property name="Weight" value="0"/>
+	<property name="Explosion.ParticleIndex" value="13"/>
+	<property name="Explosion.RadiusBlocks" value="4"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.BlastPower" value="75"/> <!-- (int,100) how far ragdolls and such are flung -->
+	<property name="FuseTime" value="6"/>
+	<property name="FusePrimeOnActivate" value="true"/>
+	<property name="ExplodeOnHit" value="true"/>
+	<property name="StickPercent" value=".5"/>
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/><!-- perkDemolitionsExpert,thrownGrenadeContactSchematic, -->
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="SoundUnholster" value="grenade_unholster"/>
+	<property class="Action0">
+		<property name="Class" value="ThrowAway"/>
+		<!-- <property name="Hitmask_override" value="Arrow"/> unfortunately this cannot work without a serious rewrite of the hitmask system -->
+		<property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Throw_strength_default" value="8"/>
+		<property name="Throw_strength_max" value="50"/>
+		<property name="Max_strain_time" value="1.25"/>
+		<property name="Sound_start" value="grenade_throw"/>
+		<property name="Gravity" value="-5"/>
+        <property name="triggerEffectTriggerPullDualsense" value="ShotgunTrigger"/>
+        <property name="triggerEffectTriggerPullXbox" value="ShotgunTrigger"/>
+        <property name="triggerEffectShootDualsense" value="ShotgunShoot"/>
+        <property name="triggerEffectShootXbox" value="PistolShoot"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Activate"/>
+		<property name="Delay" value="1"/>
+		<property name="Sound_start" value="grenade_pullpin"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	</property>
+	<property name="ThrowableDecoy" value="true"/>
+	<effect_group tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="150" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="5"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+	</effect_group>
+</item>
+<item name="ammoJunkTurretShock">
+	<property name="Tags" value="ammo"/>
+	<property name="DisplayType" value="ammoJunkTurretRegular"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="3"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Robotics"/>
+	<property name="UnlockedBy" value="perkExoticAmmoJunkTurret"/>
+	
+	<effect_group name="ammoJunkTurretShock" tiered="false">
+		<passive_effect name="MaxRange" operation="base_set" value="15" tags="perkTurrets"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="10" tags="perkTurrets"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkTurrets"/>
+
+		<passive_effect name="EntityDamage" operation="base_set" value="11.8" tags="perkTurrets"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkTurrets"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="105.6" tags="turretRanged"/>
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkTurrets"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5" tags="perkTurrets"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+	</effect_group>
+
+</item>
+<item name="ammoRocketShock">
+	<property name="Extends" value="ammoRocketHE"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/>
+	
+	<property class="Action1">
+		<property name="Explosion.RadiusBlocks" value="3"/> <!-- damage radius for blocks -->
+		<property name="Explosion.RadiusEntities" value="6"/> <!-- damage radius for entities -->
+		<property name="Explosion.DamageBonus.stone" value=".1"/>
+		<property name="Explosion.DamageBonus.metal" value=".05"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value=".5"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+	</property>
+	<effect_group name="ammoRocketFrag" tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="20" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="700" tags="perkDemolitionsExpert"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="6"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+	</effect_group>
+</item>
+<!--	SOFT BULLETS	-->
+<item name="ammo9mmBulletSoft">
+	<property name="Tags" value="ammo,ammo9mm"/>	
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="CustomIcon" value="ammo9mmBulletSoft"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="300"/>
+	<property name="EconomicValue" value="14"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="UnlockedBy" value="perkExoticAmmo9mm"/>
+	
+	<effect_group name="ammo9mmBulletSoft" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="16" tags="perkGunslinger,9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="18" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration="0.1"/>
+	</effect_group>
+</item>
+<item name="ammo762mmBulletSoft">
+	<property name="Extends" value="ammo9mmBulletSoft"/>
+	<property name="Tags" value="ammo762mm"/>
+    <property name="CustomIcon" value="ammo762mmBulletSoft"/>
+	<property name="Stacknumber" value="150"/> <!-- STK ammo low -->
+	<property name="EconomicValue" value="16"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmo762mm"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo762mmBulletSoft" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="23" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="16" tags="barrelExplosive"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration="0.1"/>
+	</effect_group>
+</item>
+<item name="ammo44MagnumBulletSoft">
+	<property name="Extends" value="ammo9mmBulletSoft"/>
+	<property name="Tags" value="ammo44Mag"/>
+    <property name="CustomIcon" value="ammo44MagnumBulletSoft"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmo44Magnum"/> <!-- BOOK_PERK -->
+	
+	<effect_group name="ammo44MagnumBulletSoft" tiered="false">
+		<!-- To split up the revolver and DVulture I'm providing base_set that the specific perk passives can latch on to -->
+		<passive_effect name="EntityDamage" operation="base_set" value="35" tags="perkGunslinger,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="12" tags="barrelExplosive"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger">
+			<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration="0.1"/>
+	</effect_group>
+</item>
+<item name="ammoShotgunSlugSoft"> 
+	<property name="Tags" value="ammo,shotgun,ammoShells"/>
+	<property name="DisplayType" value="ammoShotgun"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapPolymers"/>
+	<property name="Stacknumber" value="150"/> 
+	<property name="EconomicValue" value="20"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+	<property name="UnlockedBy" value="perkExoticAmmoSlugs"/> 
+	
+	<effect_group name="ammoShotgunSlugSoft" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="50" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkBoomstick"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="200" tags="wood"/>
+		<passive_effect name="RoundRayCount" operation="base_set" value="1" tags="perkBoomstick"/>
+		<passive_effect name="MaxRange" operation="base_set" value="18" tags="perkBoomstick"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="9" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+		<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration="0.1"/>
+	</effect_group>
+</item>
+<item name="thrownGrenadeContactHoly">
+	<property name="Extends" value="thrownGrenadeContact"/>
+	<property name="CustomIcon" value="thrownGrenadeContactHoly"/>
+	<property name="Stacknumber" value="500"/>
+	<property name="Explosion.RadiusBlocks" value="4"/>
+	<property name="Explosion.RadiusEntities" value="15"/>
+	<property name="Explosion.DamageBonus.stone" value="12"/>
+	<property name="Explosion.DamageBonus.metal" value="12"/>
+	<property name="Explosion.DamageBonus.earth" value="12"/>
+	<property name="Explosion.DamageBonus.water" value="12"/>
+	<property name="Explosion.DamageBonus.wood" value="12"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<effect_group tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="5420"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="187"/>
+		<display_value name="dExRadius" value="60"/>
+	</effect_group>
+</item>
+<item name="thrownGrenadeContactSoft">
+	<property name="Tags" value="ammo,weapon,attPerception,perkDemolitionsExpert,explosivesSkill"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="DisplayType" value="ammoGrenadeContact"/>
+	<property name="Class" value="ItemClassTimeBomb"/>
+	<property name="HoldType" value="57"/>
+	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+	<property name="DropScale" value="2.5"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="25"/>
+	<property name="EconomicValue" value="41"/>
+	<property name="TraderStageTemplate" value="baseTier2"/>
+	<property name="Weight" value="0"/>
+	<property name="Explosion.ParticleIndex" value="13"/>
+	<property name="Explosion.RadiusBlocks" value="4"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.BlastPower" value="75"/> <!-- (int,100) how far ragdolls and such are flung -->
+	<property name="FuseTime" value="6"/>
+	<property name="FusePrimeOnActivate" value="true"/>
+	<property name="ExplodeOnHit" value="true"/>
+	<property name="StickPercent" value=".5"/>
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/><!-- perkDemolitionsExpert,thrownGrenadeContactSchematic, -->
+	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="SoundUnholster" value="grenade_unholster"/>
+	<property class="Action0">
+		<property name="Class" value="ThrowAway"/>
+		<!-- <property name="Hitmask_override" value="Arrow"/> unfortunately this cannot work without a serious rewrite of the hitmask system -->
+		<property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Throw_strength_default" value="8"/>
+		<property name="Throw_strength_max" value="50"/>
+		<property name="Max_strain_time" value="1.25"/>
+		<property name="Sound_start" value="grenade_throw"/>
+		<property name="Gravity" value="-5"/>
+        <property name="triggerEffectTriggerPullDualsense" value="ShotgunTrigger"/>
+        <property name="triggerEffectTriggerPullXbox" value="ShotgunTrigger"/>
+        <property name="triggerEffectShootDualsense" value="ShotgunShoot"/>
+        <property name="triggerEffectShootXbox" value="PistolShoot"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Activate"/>
+		<property name="Delay" value="1"/>
+		<property name="Sound_start" value="grenade_pullpin"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	</property>
+	<property name="ThrowableDecoy" value="true"/>
+	<effect_group tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="150" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="5"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="Ragdoll" target="other" duration="0.1"/>
+	</effect_group>
+</item>
+<item name="ammoJunkTurretSoft">
+	<property name="Tags" value="ammo"/>
+	<property name="DisplayType" value="ammoJunkTurretRegular"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="3"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Robotics"/>
+	<property name="UnlockedBy" value="perkExoticAmmoJunkTurret"/>
+	
+	<effect_group name="ammoJunkTurretSoft" tiered="false">
+		<passive_effect name="MaxRange" operation="base_set" value="15" tags="perkTurrets"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="10" tags="perkTurrets"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkTurrets"/>
+
+		<passive_effect name="EntityDamage" operation="base_set" value="11.8" tags="perkTurrets"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkTurrets"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="105.6" tags="turretRanged"/>
+
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkTurrets"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5" tags="perkTurrets"/>
+		
+		<triggered_effect trigger="onSelfAttackedOther" action="Ragdoll" target="other" duration="0.1"/>
+	</effect_group>
+
+</item>
+<item name="ammoRocketSoft">
+	<property name="Extends" value="ammoRocketHE"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoGrenadesRockets"/>
+	
+	<property class="Action1">
+		<property name="Explosion.RadiusBlocks" value="3"/> <!-- damage radius for blocks -->
+		<property name="Explosion.RadiusEntities" value="6"/> <!-- damage radius for entities -->
+		<property name="Explosion.DamageBonus.stone" value=".1"/>
+		<property name="Explosion.DamageBonus.metal" value=".05"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value=".5"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+	</property>
+	<effect_group name="ammoRocketFrag" tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="20" tags="perkDemolitionsExpert"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="700" tags="perkDemolitionsExpert"/>
+		<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkDemolitionsExpert"/>
+		<display_value name="dExRadius" value="6"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfExplosionDamagedOther" action="Ragdoll" target="other" duration="0.1"/>
+	</effect_group>
+</item>
+<!--	GLASS AMMO BUNDLES	-->
+<item name="ammoBundle9mmBulletGlass">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo9mmBulletGlass"/>
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="1400"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo9mmBulletGlass"/>
+	</property>
+</item>
+<item name="ammoBundle44MagnumBulletGlass">
+	<property name="Extends" value="ammoBundle44MagnumBulletBall"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletGlass"/>
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="1500"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>	
+	
+	<property class="Action0">
+		<property name="Create_item" value="ammo44MagnumBulletGlass"/>
+	</property>
+</item>
+<item name="ammoBundle762mmBulletGlass">
+	<property name="Extends" value="ammoBundle762mmBulletBall"/>
+	<property name="CustomIcon" value="ammo762mmBulletGlass"/>
+	<property name="EconomicValue" value="1600"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo762mmBulletGlass"/>
+	</property>
+</item>
+<item name="ammoBundleShotgunSlugGlass">
+	<property name="Extends" value="ammoBundleShotgunShell"/>
+	<property name="CustomIcon" value="ammoShotgunSlugGlass"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammoShotgunSlugGlass"/>
+	</property>
+</item>
+<item name="ammoBundleArrowGlass">
+	<property name="Extends" value="ammoBundleArrowStone"/>
+	<property name="CustomIcon" value="ammoArrowGlass"/>
+	<property name="EconomicValue" value="1140"/>
+	<property name="TraderStageTemplate" value="arrowsTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammoArrowGlass"/>
+	</property>
+</item>
+<item name="ammoBundleCrossbowBoltGlass">
+	<property name="Extends" value="ammoBundleCrossbowBoltStone"/>
+	<property name="CustomIcon" value="ammoCrossbowBoltGlass"/>
+	<property name="EconomicValue" value="1140"/>
+	<property name="TraderStageTemplate" value="arrowsTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammoCrossbowBoltGlass"/>
+	</property>
+</item>
+<item name="ammoBundleJunkTurretGlass">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammoJunkTurretGlass"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/> <!-- BOOK_PERK -->
+	
+	<property class="Action0">
+		<property name="Create_item" value="ammoJunkTurretGlass"/>
+		<property name="Create_item_count" value="1000"/>
+	</property>
+</item>
+<!--	FIRE AMMO BUNDLES	-->
+<item name="ammoBundle9mmBulletFire">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo9mmBulletFire"/>
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="1400"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo9mmBulletFire"/>
+	</property>
+</item>
+<item name="ammoBundle762mmBulletFire">
+	<property name="Extends" value="ammoBundle762mmBulletBall"/>
+	<property name="CustomIcon" value="ammo762mmBulletFire"/>
+	<property name="EconomicValue" value="1600"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo762mmBulletFire"/>
+	</property>
+</item>
+<item name="ammoBundle44MagnumBulletFire">
+	<property name="Extends" value="ammoBundle44MagnumBulletBall"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletFire"/>
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="1500"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo44MagnumBulletFire"/>
+	</property>
+</item>
+<item name="ammoBundleShotgunSlugFire">
+	<property name="Extends" value="ammoBundleShotgunShell"/>
+	<property name="CustomIcon" value="ammoShotgunSlugFire"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammoShotgunSlugFire"/>
+	</property>
+</item>
+<item name="ammoBundleJunkTurretFire">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammoJunkTurretFire"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/> <!-- BOOK_PERK -->
+	
+	<property class="Action0">
+		<property name="Create_item" value="ammoJunkTurretFire"/>
+		<property name="Create_item_count" value="1000"/>
+	</property>
+</item>
+<!--	HIGH DENSITY AMMO BUNDLES	-->
+<item name="ammoBundle9mmBulletHighDensity">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo9mmBulletHighDensity"/>
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="1400"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo9mmBulletHighDensity"/>
+	</property>
+</item>
+<item name="ammoBundle762mmBulletHighDensity">
+	<property name="Extends" value="ammoBundle762mmBulletBall"/>
+	<property name="CustomIcon" value="ammo762mmBulletHighDensity"/>
+	<property name="EconomicValue" value="1600"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo762mmBulletHighDensity"/>
+	</property>
+</item>
+<item name="ammoBundle44MagnumBulletHighDensity">
+	<property name="Extends" value="ammoBundle44MagnumBulletBall"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletHighDensity"/>
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="1500"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo44MagnumBulletHighDensity"/>
+	</property>
+</item>
+<item name="ammoBundleShotgunSlugHighDensity">
+	<property name="Extends" value="ammoBundleShotgunShell"/>
+	<property name="CustomIcon" value="ammoShotgunSlugHighDensity"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammoShotgunSlugHighDensity"/>
+	</property>
+</item>
+<item name="ammoBundleJunkTurretHighDensity">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammoJunkTurretHighDensity"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/> <!-- BOOK_PERK -->
+	
+	<property class="Action0">
+		<property name="Create_item" value="ammoJunkTurretHighDensity"/>
+		<property name="Create_item_count" value="1000"/>
+	</property>
+</item>
+<!--	SHOCK AMMO BUNDLES	-->
+<item name="ammoBundle9mmBulletShock">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo9mmBulletShock"/>
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="1400"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo9mmBulletShock"/>
+	</property>
+</item>
+<item name="ammoBundle762mmBulletShock">
+	<property name="Extends" value="ammoBundle762mmBulletBall"/>
+	<property name="CustomIcon" value="ammo762mmBulletShock"/>
+	<property name="EconomicValue" value="1600"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo762mmBulletShock"/>
+	</property>
+</item>
+<item name="ammoBundle44MagnumBulletShock">
+	<property name="Extends" value="ammoBundle44MagnumBulletBall"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletShock"/>
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="1500"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo44MagnumBulletShock"/>
+	</property>
+</item>
+<item name="ammoBundleShotgunSlugShock">
+	<property name="Extends" value="ammoBundleShotgunShell"/>
+	<property name="CustomIcon" value="ammoShotgunSlugShock"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammoShotgunSlugShock"/>
+	</property>
+</item>
+<item name="ammoBundleArrowShock">
+	<property name="Extends" value="ammoBundleArrowStone"/>
+	<property name="CustomIcon" value="ammoArrowShock"/>
+	<property name="EconomicValue" value="1140"/>
+	<property name="TraderStageTemplate" value="arrowsTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammoArrowShock"/>
+	</property>
+</item>
+<item name="ammoBundleCrossbowBoltShock">
+	<property name="Extends" value="ammoBundleCrossbowBoltStone"/>
+	<property name="CustomIcon" value="ammoCrossbowBoltShock"/>
+	<property name="EconomicValue" value="1140"/>
+	<property name="TraderStageTemplate" value="arrowsTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammoCrossbowBoltShock"/>
+	</property>
+</item>
+<item name="ammoBundleJunkTurretShock">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammoJunkTurretShock"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/> <!-- BOOK_PERK -->
+	
+	<property class="Action0">
+		<property name="Create_item" value="ammoJunkTurretShock"/>
+		<property name="Create_item_count" value="1000"/>
+	</property>
+</item>
+<!--	SOFT AMMO BUNDLES	-->
+<item name="ammoBundle9mmBulletSoft">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammo9mmBulletSoft"/>
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="1400"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo9mmBulletSoft"/>
+	</property>
+</item>
+<item name="ammoBundle762mmBulletSoft">
+	<property name="Extends" value="ammoBundle762mmBulletBall"/>
+	<property name="CustomIcon" value="ammo762mmBulletSoft"/>
+	<property name="EconomicValue" value="1600"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo762mmBulletSoft"/>
+	</property>
+</item>
+<item name="ammoBundle44MagnumBulletSoft">
+	<property name="Extends" value="ammoBundle44MagnumBulletBall"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletSoft"/>
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="1500"/>
+	<property name="TraderStageTemplate" value="ammoTier3"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammo44MagnumBulletSoft"/>
+	</property>
+</item>
+<item name="ammoBundleShotgunSlugSoft">
+	<property name="Extends" value="ammoBundleShotgunShell"/>
+	<property name="CustomIcon" value="ammoShotgunSlugSoft"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="TraderStageTemplate" value="ammoTier2"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/>
+
+	<property class="Action0">
+		<property name="Create_item" value="ammoShotgunSlugSoft"/>
+	</property>
+</item>
+<item name="ammoBundleJunkTurretSoft">
+	<property name="Extends" value="ammoBundleMaster"/>
+	<property name="CustomIcon" value="ammoJunkTurretSoft"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="TraderStageTemplate" value="ammoTier1"/>
+	<property name="UnlockedBy" value="perkExoticAmmoComplete"/> <!-- BOOK_PERK -->
+	
+	<property class="Action0">
+		<property name="Create_item" value="ammoJunkTurretSoft"/>
+		<property name="Create_item_count" value="1000"/>
+	</property>
+</item>
+	<!-- *** Exotic Ammo Vol 1: 9mm -->
+<item name="bookExoticAmmo9mm">
+	<property name="Extends" value="bookFiremansAlmanacHeat"/>
+	<property name="CustomIcon" value="bookExoticAmmo"/>
+	<property name="DescriptionKey" value="perkExoticAmmo9mmLongDesc"/>
+	<property name="Unlocks" value="perkExoticAmmo9mm"/>
+	<property name="Tags" value="sniperProb"/>
+	<property name="Group" value="Books,BooksOnly,TCReading"/>	
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmo9mm" operation="Equals" value="0"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmo9mm" level="-1"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>
+		
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">		
+		<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>	
+	</effect_group>
+
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoProjectiles" operation="Equals" value="0"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoProjectiles" level="-1"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+	<!-- *** Exotic Ammo Vol 2: 7.62mm -->
+<item name="bookExoticAmmo762mm">
+	<property name="Extends" value="bookExoticAmmo9mm"/>
+	<property name="DescriptionKey" value="perkExoticAmmo762mmLongDesc"/>
+	<property name="Unlocks" value="perkExoticAmmo762mm"/>
+	
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmo762mm" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmo762mm" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>	
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoProjectiles" operation="Equals" value="0"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoProjectiles" level="-1"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+	<!-- *** Exotic Ammo Vol 3: 44Magnum -->
+<item name="bookExoticAmmo44Magnum">
+	<property name="Extends" value="bookExoticAmmo9mm"/>
+	<property name="DescriptionKey" value="perkExoticAmmo44MagnumLongDesc"/>
+	<property name="Unlocks" value="perkExoticAmmo44Magnum"/>
+	
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmo44Magnum" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmo44Magnum" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>	
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoProjectiles" operation="Equals" value="0"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoProjectiles" level="-1"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+	<!-- *** Exotic Ammo Vol 4: Slugs -->
+<item name="bookExoticAmmoSlugs">
+	<property name="Extends" value="bookExoticAmmo9mm"/>
+	<property name="DescriptionKey" value="perkExoticAmmoSlugsLongDesc"/>
+	<property name="Unlocks" value="perkExoticAmmoSlugs"/>
+	
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoSlugs" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoSlugs" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>	
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoProjectiles" operation="Equals" value="0"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoProjectiles" level="-1"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+	<!-- *** Exotic Ammo Vol 5: Arrows and Bolts -->
+<item name="bookExoticAmmoArrowsBolts">
+	<property name="Extends" value="bookExoticAmmo9mm"/>
+	<property name="DescriptionKey" value="perkExoticAmmoArrowsBoltsLongDesc"/>
+	<property name="Unlocks" value="perkExoticAmmoArrowsBolts"/>
+	
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoArrowsBolts" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoArrowsBolts" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>	
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoProjectiles" operation="Equals" value="0"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoProjectiles" level="-1"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+	<!-- *** Exotic Ammo Vol 6: Grenades and Rockets-->
+<item name="bookExoticAmmoGrenadesRockets">
+	<property name="Extends" value="bookExoticAmmo9mm"/>
+	<property name="DescriptionKey" value="perkExoticAmmoGrenadesRocketsLongDesc"/>
+	<property name="Unlocks" value="perkExoticAmmoGrenadesRockets"/>
+	
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoGrenadesRockets" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoGrenadesRockets" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>	
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoProjectiles" operation="Equals" value="0"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoProjectiles" level="-1"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+	<!-- *** Exotic Ammo Vol 7: Junk Turret -->
+<item name="bookExoticAmmoJunkTurret">
+	<property name="Extends" value="bookExoticAmmo9mm"/>
+	<property name="DescriptionKey" value="perkExoticAmmoJunkTurretLongDesc"/>
+	<property name="Unlocks" value="perkExoticAmmoJunkTurret"/>
+	
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoJunkTurret" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoJunkTurret" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillExoticAmmo" operation="GTE" value="7"/></triggered_effect>	
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkExoticAmmoProjectiles" operation="Equals" value="0"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkExoticAmmoProjectiles" level="-1"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+</append>
+
+<set xpath="items/item[@name='questRewardT1BookBundle' or @name='questRewardT2BookBundle' or @name='questRewardT3BookBundle' or @name='questRewardT4BookBundle']/property[@class='Action0']/property[@name='Random_item']/@value">bookRangersArrowRecovery,bookRangersCripplingShot,bookRangersKnockdown,bookRangersFlamingArrows,bookRangersAPAmmo,bookRangersExplodingBolts,bookRangersForestGuide,bookSpearHunter1Damage,bookSpearHunter2Maintenance,bookSpearHunter3Bleed,bookSpearHunter4KillMove,bookSpearHunter5RapidStrike,bookSpearHunter6PenetratingShaft,bookSpearHunter7QuickStrike,bookHuntingJournalBears,bookHuntingJournalCoyotes,bookHuntingJournalDeer,bookHuntingJournalMountainLions,bookHuntingJournalVultures,bookHuntingJournalWolves,bookHuntingJournalSelfDefense,bookArtOfMiningLuckyStrike,bookArtOfMiningDiamondTools,bookArtOfMiningCoffee,bookArtOfMiningBlackStrap,bookArtOfMiningPallets,bookArtOfMiningAvalanche,bookArtOfMiningDamage,bookBatterUpFoulBalls,bookBatterUpBigHits,bookBatterUpStealingBases,bookBatterUpKnockdown,bookBatterUpSlowPitch,bookBatterUpMaintenance,bookBatterUpMetalChain,bookNeedleAndThreadDesertWear,bookNeedleAndThreadDusters,bookNeedleAndThreadFootwear,bookNeedleAndThreadLegwear,bookNeedleAndThreadPockets,bookNeedleAndThreadPufferCoats,bookNeedleAndThreadWinterWear,bookPistolPeteAPAmmo,bookPistolPeteDamage,bookPistolPeteHPAmmo,bookPistolPeteMaintenance,bookPistolPeteSteadyHand,bookPistolPeteSwissKnees,bookPistolPeteTakeAim,bookWasteTreasuresAcid,bookWasteTreasuresCloth,bookWasteTreasuresCoffins,bookWasteTreasuresDoors,bookWasteTreasuresHoney,bookWasteTreasuresSinks,bookWasteTreasuresWater,bookUrbanCombatAdrenalineRush,bookUrbanCombatCigar,bookUrbanCombatRoomClearing,bookUrbanCombatJumping,bookUrbanCombatLandMines,bookUrbanCombatLanding,bookUrbanCombatSneaking,bookNightStalkerArchery,bookNightStalkerBlades,bookNightStalkerSilentNight,bookNightStalkerSlumberParty,bookNightStalkerStealthDamage,bookNightStalkerThiefAdrenaline,bookNightStalkerTwilightThief,bookFiremansAlmanacSpeed,bookFiremansAlmanacAxes,bookFiremansAlmanacEquipment,bookFiremansAlmanacPrevention,bookFiremansAlmanacHarvest,bookFiremansAlmanacHeat,bookFiremansAlmanacMolotov,bookBarBrawling1BasicMoves,bookBarBrawling2DropABomb,bookBarBrawling3KillerInstinct,bookBarBrawling4FinishingMoves,bookBarBrawling5AdrenalineHealing,bookBarBrawling6RageMode,bookBarBrawling7BoozedUp,bookLuckyLooterAmmunition,bookLuckyLooterBooks,bookLuckyLooterBrass,bookLuckyLooterDukes,bookLuckyLooterFood,bookLuckyLooterLead,bookLuckyLooterMedical,bookEnforcerAPAmmo,bookEnforcerApparel,bookEnforcerCriminalPursuit,bookEnforcerHPAmmo,bookEnforcerDamage,bookEnforcerIntimidation,bookEnforcerPunks,bookShotgunMessiahBreachingSlugs,bookShotgunMessiahDamage,bookShotgunMessiahLimbShot,bookShotgunMessiahMaintenance,bookShotgunMessiahMagazine,bookShotgunMessiahPartyStarter,bookShotgunMessiahSlugs,bookGreatHeistAdrenalineFall,bookGreatHeistGoldRush,bookGreatHeistClaimed,bookGreatHeistGems,bookGreatHeistMotionDetection,bookGreatHeistSafes,bookGreatHeistSprintSneak,bookSniperAPAmmo,bookSniperControlledBreathing,bookSniperCripplingShot,bookSniperDamage,bookSniperHeadShot,bookSniperReload,bookSniperHPAmmo,bookAutoWeaponsDamage,bookAutoWeaponsRagdoll,bookAutoWeaponsMaintenance,bookAutoWeaponsRecoil,bookAutoWeaponsDrumMag,bookAutoWeaponsUncontrolledBurst,bookAutoWeaponsMachineGuns,bookTechJunkie1Damage,bookTechJunkie2Maintenance,bookTechJunkie3APAmmo,bookTechJunkie4Shells,bookTechJunkie5Repulsor,bookTechJunkie6BatonCharge,bookTechJunkie7Hydraulics,bookExoticAmmo9mm,bookExoticAmmo762mm,bookExoticAmmo44Magnum,bookExoticAmmoSlugs,bookExoticAmmoArrowsBolts,bookExoticAmmoGrenadesRockets,bookExoticAmmoJunkTurret
+</set>
+
+<!-- SET GUN MAGAZINES TO ACCEPT EXOTIC AMMO -->
+<set xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and
+ @value='ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP']/@value">ammo9mmBulletBall,ammo9mmBulletHP,ammo9mmBulletAP,ammo9mmBulletGlass,ammo9mmBulletFire,ammo9mmBulletHighDensity,ammo9mmBulletShock,ammo9mmBulletSoft
+</set>
+
+<set xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and
+ @value='ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP']/@value">ammo762mmBulletBall,ammo762mmBulletHP,ammo762mmBulletAP,ammo762mmBulletGlass,ammo762mmBulletFire,ammo762mmBulletHighDensity,ammo762mmBulletShock,ammo762mmBulletSoft
+</set>
+
+<set xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and
+ @value='ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP']/@value">ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP,ammo44MagnumBulletGlass,ammo44MagnumBulletFire,ammo44MagnumBulletHighDensity,ammo44MagnumBulletShock,ammo44MagnumBulletSoft
+</set>
+
+<set xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and
+ @value='ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding']/@value">ammoArrowStone,ammoArrowIron,ammoArrowSteelAP,ammoArrowFlaming,ammoArrowExploding,ammoArrowGlass,ammoArrowShock
+</set>
+
+<set xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and
+ @value='ammoCrossbowBoltStone,ammoCrossbowBoltIron,ammoCrossbowBoltSteelAP,ammoCrossbowBoltFlaming,ammoCrossbowBoltExploding']/@value">ammoCrossbowBoltStone,ammoCrossbowBoltIron,ammoCrossbowBoltSteelAP,ammoCrossbowBoltFlaming,ammoCrossbowBoltExploding,ammoCrossbowBoltGlass,ammoCrossbowBoltShock
+</set>
+
+<set xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and
+ @value='ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug']/@value">ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug,ammoShotgunSlugGlass,ammoShotgunSlugFire,ammoShotgunSlugHighDensity,ammoShotgunSlugShock,ammoShotgunSlugSoft
+</set>
+
+<set xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and
+ @value='ammoJunkTurretRegular,ammoJunkTurretShell,ammoJunkTurretAP']/@value">ammoJunkTurretRegular,ammoJunkTurretShell,ammoJunkTurretAP,ammoJunkTurretGlass,ammoJunkTurretFire,ammoJunkTurretHighDensity,ammoJunkTurretShock,ammoJunkTurretSoft
+</set>
+
+<set xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and
+ @value='ammoRocketHE,ammoRocketFrag']/@value">ammoRocketHE,ammoRocketFrag,ammoRocketGlass,ammoRocketFire,ammoRocketHighDensity,ammoRocketShock,ammoRocketSoft
+</set>
+<!-- <set xpath="/items/item/property[@class='Action0']/property[@name='Magazine_items' and
+ @value='ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug']/@value">ammoShotgunShell,ammoShotgunSlug,ammoShotgunBreachingSlug,ammoShotgunShellGlass,ammoShotgunSlugGlass,ammoShotgunShellFire,ammoShotgunSlugFire,ammoShotgunShellHighDensity,ammoShotgunSlugHighDensity,ammoShotgunShellAcid,ammoShotgunSlugAcid,ammoShotgunSlugExplosive,ammoShotgunSlugShock
+</set> -->
+</config>

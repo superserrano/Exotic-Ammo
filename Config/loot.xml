@@ -1,0 +1,109 @@
+<!--
+	Exotic Ammo by BoxTurtle Games
+	What you can can do:
+		-Change this mod however you want
+		-Redistribute this mod as part of a modpack (give credit :) )
+		-Share with friends
+	What you cannot do:
+		-Reupload to any site and take credit as the original author
+		-Make money from this mod
+-->
+<config>
+    <append xpath="//lootgroup[@name='groupQuestAmmo']">
+        <item name="ammo44MagnumBulletGlass" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammo9mmBulletGlass" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammo762mmBulletGlass" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoShotgunSlugGlass" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoArrowGlass" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoCrossbowBoltGlass" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="thrownGrenadeContactGlass" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoJunkTurretGlass" count="50" loot_prob_template="QuestT2Prob"/>
+        
+        <item name="ammo9mmBulletFire" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammo762mmBulletFire" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammo44MagnumBulletFire" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoShotgunSlugFire" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="thrownGrenadeContactFire" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoJunkTurretFire" count="50" loot_prob_template="QuestT2Prob"/>        
+        
+        <item name="ammo9mmBulletHighDensity" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammo762mmBulletHighDensity" count="50" loot_prob_template="QuestT2Prob"/>        
+        <item name="ammo44MagnumBulletHighDensity" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoShotgunSlugHighDensity" count="50" loot_prob_template="QuestT2Prob"/>       
+        <item name="thrownGrenadeContactHighDensity" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoJunkTurretHighDensity" count="50" loot_prob_template="QuestT2Prob"/>
+        
+        <item name="ammo9mmBulletShock" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammo762mmBulletShock" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammo44MagnumBulletShock" count="50" loot_prob_template="QuestT2Prob"/>         
+        <item name="ammoShotgunSlugShock" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoArrowShock" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoCrossbowBoltShock" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="thrownGrenadeContactShock" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammoJunkTurretShock" count="50" loot_prob_template="QuestT2Prob"/>
+        
+        <item name="ammo9mmBulletSoft" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammo762mmBulletSoft" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="ammo44MagnumBulletSoft" count="50" loot_prob_template="QuestT2Prob"/>         
+        <item name="ammoShotgunSlugSoft" count="50" loot_prob_template="QuestT2Prob"/>
+        <item name="thrownGrenadeContactSoft" count="50" loot_prob_template="QuestT2Prob"/>         
+        <item name="ammoJunkTurretSoft" count="50" loot_prob_template="QuestT2Prob"/>
+    </append>
+    <append xpath="//lootgroup[@name='groupAmmoRocket']">    
+	    <item name="ammoRocketGlass" count="1"/>
+	    <item name="ammoRocketFire" count="1"/>
+	    <item name="ammoRocketHighDensity" count="1"/>
+	    <item name="ammoRocketShock" count="1"/>
+	    <item name="ammoRocketSoft" count="1"/>
+    </append>
+    <append xpath="//lootgroup[@name='perkBooks' or 
+        @name='groupMilitaryBooks' or 
+        @name='groupShotgunMessiahBooks' or 
+        @name='twitch_perkBooks']">
+        <item name="bookExoticAmmo9mm" prob="0.05"/>
+        <item name="bookExoticAmmo762mm" prob="0.05"/>
+        <item name="bookExoticAmmo44Magnum" prob="0.05"/>
+        <item name="bookExoticAmmoSlugs" prob="0.05"/>
+        <item name="bookExoticAmmoArrowsBolts" prob="0.05"/>
+        <item name="bookExoticAmmoGrenadesRockets" prob="0.05"/>
+        <item name="bookExoticAmmoJunkTurret" prob="0.05"/>
+    </append>
+    <append xpath="//lootgroup[@name='groupWeaponsT2_Ranged']">
+        <item name="ammo9mmBulletGlass" count="6,9"/>
+		<item name="ammo44MagnumBulletGlass" count="6,9"/>
+		<item name="ammo762mmBulletGlass" count="6,9"/>
+		<item name="ammoShotgunSlugGlass" count="6,9" />			
+		<item name="ammoArrowGlass" count="6,9"/>	
+		<item name="ammoCrossbowBoltGlass" count="6,9"/>
+        <item name="ammo9mmBulletFire" count="6,9"/>
+		<item name="ammo44MagnumBulletFire" count="6,9"/>
+		<item name="ammo762mmBulletFire" count="6,9"/>
+		<item name="ammoShotgunSlugFire" count="6,9" />	
+        <item name="ammo9mmBulletHighDensity" count="6,9"/>
+		<item name="ammo44MagnumBulletHighDensity" count="6,9"/>
+		<item name="ammo762mmBulletHighDensity" count="6,9"/>
+		<item name="ammoShotgunSlugHighDensity" count="6,9" />
+        <item name="ammo9mmBulletShock" count="6,9"/>
+		<item name="ammo44MagnumBulletShock" count="6,9"/>
+		<item name="ammo762mmBulletShock" count="6,9"/>
+		<item name="ammoShotgunSlugShock" count="6,9" />			
+		<item name="ammoArrowShock" count="6,9"/>	
+		<item name="ammoCrossbowBoltShock" count="6,9"/>
+        <item name="ammo9mmBulletSoft" count="6,9"/>
+		<item name="ammo44MagnumBulletSoft" count="6,9"/>
+		<item name="ammo762mmBulletSoft" count="6,9"/>
+		<item name="ammoShotgunSlugSoft" count="6,9" />		
+    </append>
+    <append xpath="//lootgroup[@name='groupWeaponsT3_Ranged']">
+		<item name="thrownGrenadeContactGlass" count="6,9"/>
+		<item name="ammoRocketGlass" count="6,9"/>
+		<item name="thrownGrenadeContactFire" count="6,9"/>
+		<item name="ammoRocketFire" count="6,9"/>	
+		<item name="thrownGrenadeContactHighDensity" count="6,9"/>
+		<item name="ammoRocketHighDensity" count="6,9"/>	
+		<item name="thrownGrenadeContactShock" count="6,9"/>
+		<item name="ammoRocketShock" count="6,9"/>
+		<item name="thrownGrenadeContactSoft" count="6,9"/>
+		<item name="ammoRocketSoft" count="6,9"/>
+    </append>
+</config>

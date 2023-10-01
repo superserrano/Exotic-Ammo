@@ -1,0 +1,407 @@
+<!--
+	Exotic Ammo by BoxTurtle Games
+	What you can can do:
+		-Change this mod however you want
+		-Redistribute this mod as part of a modpack (give credit :) )
+		-Share with friends
+	What you cannot do:
+		-Reupload to any site and take credit as the original author
+		-Make money from this mod
+-->
+<config>
+<append xpath="/recipes">
+<!--	GLASS PROJECTILES	-->
+<recipe name="resourceGlassBulletTip" count="1" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering" craft_tool="toolBellows">
+	<ingredient name="unit_glass" count="15"/>
+	<ingredient name="unit_clay" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_glass"/>
+	</effect_group>   
+</recipe>
+<recipe name="resourceArrowHeadGlass" count="1" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering" craft_tool="toolBellows">
+	<ingredient name="unit_glass" count="15"/>
+	<ingredient name="unit_clay" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_glass"/>
+	</effect_group>   
+</recipe>
+<recipe name="resourceRocketTipGlass" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+	<ingredient name="resourceRocketTip" count="1"/>
+	<ingredient name="resourceBrokenGlass" count="5" /> 
+</recipe>
+<!--	FIRE PROJECTILES	-->
+<recipe name="resourceFireBulletTip" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="2"/>
+	<ingredient name="ammoGasCan" count="5" /> 
+</recipe>
+<recipe name="resourceRocketTipFire" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+	<ingredient name="resourceRocketTip" count="1"/>
+	<ingredient name="ammoGasCan" count="5" /> 
+</recipe>
+<!--	SHOCK PROJECTILES	-->
+<recipe name="resourceShockBulletTip" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="2"/>
+	<ingredient name="resourceElectricParts" count="1" /> 
+</recipe>
+<recipe name="resourceArrowHeadShock" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering">
+	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	<ingredient name="resourceElectricParts" count="1"/> 
+</recipe>
+<recipe name="resourceRocketTipShock" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+	<ingredient name="resourceRocketTip" count="1"/>
+	<ingredient name="resourceElectricParts" count="1" /> 
+</recipe>
+<!--	SOFT PROJECTILES	-->
+<recipe name="resourceSoftBulletTip" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering,workbenchCrafting">
+	<ingredient name="resourceScrapPolymers" count="2"/>
+	<ingredient name="resourceClayLump" count="1" /> 
+</recipe>
+<recipe name="resourceRocketTipSoft" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+	<ingredient name="resourceRocketTip" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="5" /> 
+</recipe>
+<!--	GLASS BULLETS	-->
+<recipe name="ammo9mmBulletGlass" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGlassBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammo762mmBulletGlass" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGlassBulletTip" count="3"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammo44MagnumBulletGlass" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGlassBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammoShotgunSlugGlass" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGlassBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+</recipe>
+<recipe name="ammoArrowGlass" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadGlass" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+<recipe name="ammoCrossbowBoltGlass" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadGlass" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+<recipe name="thrownGrenadeContactGlass" count="1" craft_time="20" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceGunPowder" count="14"/>
+	<ingredient name="resourceForgedIron" count="4"/>
+	<ingredient name="resourceBrokenGlass" count="5"/>
+</recipe>
+<recipe name="ammoJunkTurretGlass" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGlassBulletTip" count="1"/>
+</recipe>
+<recipe name="ammoRocketGlass" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceRocketTipGlass" count="1"/>
+	<ingredient name="resourceGunPowder" count="15"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="ammoGasCan" count="500"/>
+	<ingredient name="resourceRocketCasing" count="1"/>
+</recipe>
+<!--	FIRE BULLETS	-->
+<recipe name="ammo9mmBulletFire" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceFireBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammo762mmBulletFire" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceFireBulletTip" count="3"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammo44MagnumBulletFire" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceFireBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammoShotgunSlugFire" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceFireBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+</recipe>
+<recipe name="thrownGrenadeContactFire" count="1" craft_time="20" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceGunPowder" count="14"/>
+	<ingredient name="resourceForgedIron" count="4"/>
+	<ingredient name="ammoGasCan" count="5"/>
+</recipe>
+<recipe name="ammoJunkTurretFire" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceFireBulletTip" count="1"/>
+</recipe>
+<recipe name="ammoRocketFire" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceRocketTipFire" count="1"/>
+	<ingredient name="resourceGunPowder" count="15"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="ammoGasCan" count="500"/>
+	<ingredient name="resourceRocketCasing" count="1"/>
+</recipe>
+<!--	HIGH DENSITY BULLETS	-->
+<recipe name="ammo9mmBulletHighDensity" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="4"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammo762mmBulletHighDensity" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="6"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammo44MagnumBulletHighDensity" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="4"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammoShotgunSlugHighDensity" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="4"/>
+	<ingredient name="resourceGunPowder" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+</recipe>
+<recipe name="thrownGrenadeContactHighDensity" count="1" craft_time="20" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceGunPowder" count="14"/>
+	<ingredient name="resourceForgedIron" count="8"/>
+	<ingredient name="resourceSpring" count="2"/>
+</recipe>
+<recipe name="ammoJunkTurretHighDensity" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapLead" count="6"/>
+</recipe>
+<recipe name="ammoRocketHighDensity" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceRocketTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="15"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="ammoGasCan" count="500"/>
+	<ingredient name="resourceRocketCasing" count="1"/>
+</recipe>
+<!--	SHOCK BULLETS	-->
+<recipe name="ammo9mmBulletShock" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceShockBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammo762mmBulletShock" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceShockBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammo44MagnumBulletShock" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceShockBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammoShotgunSlugShock" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceShockBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+</recipe>
+<recipe name="ammoArrowShock" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadShock" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+<recipe name="ammoCrossbowBoltShock" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadShock" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+</recipe>
+<recipe name="thrownGrenadeContactShock" count="1" craft_time="20" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceGunPowder" count="14"/>
+	<ingredient name="resourceForgedIron" count="4"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+<recipe name="ammoJunkTurretShock" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceShockBulletTip" count="1"/>
+</recipe>
+<recipe name="ammoRocketShock" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceRocketTipShock" count="1"/>
+	<ingredient name="resourceGunPowder" count="15"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="ammoGasCan" count="500"/>
+	<ingredient name="resourceRocketCasing" count="1"/>
+</recipe>
+<!--	SOFT BULLETS	-->
+<recipe name="ammo9mmBulletSoft" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceSoftBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammo762mmBulletSoft" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceSoftBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammo44MagnumBulletSoft" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceSoftBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+<recipe name="ammoShotgunSlugSoft" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceSoftBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+</recipe>
+<recipe name="thrownGrenadeContactSoft" count="1" craft_time="20" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceGunPowder" count="14"/>
+	<ingredient name="resourceForgedIron" count="4"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+</recipe>
+<recipe name="thrownGrenadeContactHoly" count="1" craft_time="20" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceGunPowder" count="14"/>
+	<ingredient name="resourceForgedSteel" count="8"/>
+	<ingredient name="resourceSpring" count="2"/>
+</recipe>
+<recipe name="ammoJunkTurretSoft" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceSoftBulletTip" count="1"/>
+</recipe>
+<recipe name="ammoRocketSoft" count="1" craft_time="30" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceRocketTipSoft" count="1"/>
+	<ingredient name="resourceGunPowder" count="15"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="ammoGasCan" count="500"/>
+	<ingredient name="resourceRocketCasing" count="1"/>
+</recipe>
+<!--	GLASS AMMO BUNDLES	-->
+<recipe name="ammoBundle9mmBulletGlass" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGlassBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundle44MagnumBulletGlass" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGlassBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="240"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundle762mmBulletGlass" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGlassBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="400"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundleShotgunSlugGlass" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGlassBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="400"/>
+	<ingredient name="resourceScrapPolymers" count="80"/>
+</recipe>
+<recipe name="ammoBundleArrowGlass" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadGlass" count="80"/>
+	<ingredient name="resourceScrapPolymers" count="160"/>
+</recipe>
+<recipe name="ammoBundleCrossbowBoltGlass" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadGlass" count="80"/>
+	<ingredient name="resourceScrapPolymers" count="160"/>
+</recipe>
+<recipe name="ammoBundleJunkTurretGlass" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGlassBulletTip" count="80"/>
+</recipe>
+<!--	FIRE AMMO BUNDLES	-->
+<recipe name="ammoBundle9mmBulletFire" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceFireBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundle762mmBulletFire" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceFireBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="400"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundle44MagnumBulletFire" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceFireBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="240"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundleShotgunSlugFire" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceFireBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="400"/>
+	<ingredient name="resourceScrapPolymers" count="80"/>
+</recipe>
+<recipe name="ammoBundleJunkTurretFire" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceFireBulletTip" count="80"/>
+</recipe>
+<!--	HIGH DENSITY AMMO BUNDLES	-->
+<recipe name="ammoBundle9mmBulletHighDensity" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="320"/>
+	<ingredient name="resourceGunPowder" count="240"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundle762mmBulletHighDensity" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="480"/>
+	<ingredient name="resourceGunPowder" count="400"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundle44MagnumBulletHighDensity" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="320"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundleShotgunSlugHighDensity" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="320"/>
+	<ingredient name="resourceGunPowder" count="400"/>
+	<ingredient name="resourceScrapPolymers" count="80"/>
+</recipe>
+<recipe name="ammoBundleJunkTurretHighDensity" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapLead" count="4800"/>
+</recipe>
+<!--	SHOCK AMMO BUNDLES	-->
+<recipe name="ammoBundle9mmBulletShock" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceShockBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundle762mmBulletShock" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceShockBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundle44MagnumBulletShock" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceShockBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundleShotgunSlugShock" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceShockBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="240"/>
+	<ingredient name="resourceScrapPolymers" count="80"/>
+</recipe>
+<recipe name="ammoBundleArrowShock" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadShock" count="80"/>
+	<ingredient name="resourceScrapPolymers" count="160"/>
+</recipe>
+<recipe name="ammoBundleCrossbowBoltShock" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceArrowHeadShock" count="80"/>
+	<ingredient name="resourceScrapPolymers" count="160"/>
+</recipe>
+<recipe name="ammoBundleJunkTurretShock" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceShockBulletTip" count="80"/>
+</recipe>
+<!--	SOFT AMMO BUNDLES	-->
+<recipe name="ammoBundle9mmBulletSoft" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceSoftBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundle762mmBulletSoft" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceSoftBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundle44MagnumBulletSoft" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceSoftBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="160"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+<recipe name="ammoBundleShotgunSlugSoft" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceSoftBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="240"/>
+	<ingredient name="resourceScrapPolymers" count="80"/>
+</recipe>
+<recipe name="ammoBundleJunkTurretSoft" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceSoftBulletTip" count="80"/>
+</recipe>
+</append>
+</config>

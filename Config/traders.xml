@@ -1,0 +1,100 @@
+<!--
+	Exotic Ammo by BoxTurtle Games
+	What you can can do:
+		-Change this mod however you want
+		-Redistribute this mod as part of a modpack (give credit :) )
+		-Share with friends
+	What you cannot do:
+		-Reupload to any site and take credit as the original author
+		-Make money from this mod
+-->
+<config>
+<!--    CREATE TRADER GROUP FOR EXOTIC AMMO    -->
+<insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='ammoAll']"> 
+	<trader_item_group name="ammoGlass">
+		<item name="ammo9mmBulletGlass" count="40,150"/>	
+		<item name="ammo762mmBulletGlass" count="20,100"/>
+		<item name="ammo44MagnumBulletGlass" count="15,60" prob="0.5"/>
+		<item name="ammoShotgunSlugGlass" count="6,25" prob="0.2"/>			
+		<item name="ammoArrowGlass" count="20,60"/>	
+		<item name="ammoCrossbowBoltGlass" count="20,60"/>
+		<item name="thrownGrenadeContactGlass" count="5,20"/>
+		<item name="ammoRocketGlass" count="5,20"/>
+		<item name="resourceGlassBulletTip" count="20,60"/>
+		<item name="resourceArrowHeadGlass" count="20,60"/>	
+		<item name="resourceRocketTipGlass" count="20,60"/>	
+	</trader_item_group>
+	<trader_item_group name="ammoFire">
+		<item name="ammo9mmBulletFire" count="40,150" />
+		<item name="ammo762mmBulletFire" count="40,150" />
+		<item name="ammo44MagnumBulletFire" count="15,60" prob="0.5"/>
+		<item name="ammoShotgunSlugFire" count="6,25" prob="0.2"/>	
+		<item name="thrownGrenadeContactFire" count="5,20"/>
+		<item name="resourceFireBulletTip" count="20,60" />
+		<item name="ammoRocketFire" count="5,20"/>
+		<item name="resourceRocketTipFire" count="20,60"/>	
+	</trader_item_group>
+	<trader_item_group name="ammoHighDensity">
+		<item name="ammo9mmBulletHighDensity" count="40,150" />
+		<item name="ammo762mmBulletHighDensity" count="40,150" />
+		<item name="ammo44MagnumBulletHighDensity" count="15,60" prob="0.5"/>
+		<item name="ammoShotgunSlugHighDensity" count="6,25" prob="0.2"/>	
+		<item name="thrownGrenadeContactHighDensity" count="5,20"/>
+		<item name="ammoRocketHighDensity" count="5,20"/>
+	</trader_item_group>	
+	<trader_item_group name="ammoShock">	
+		<item name="ammo9mmBulletShock" count="40,150"/>
+		<item name="ammo762mmBulletShock" count="40,150"/>
+		<item name="ammo44MagnumBulletShock" count="15,60" prob="0.5"/>		
+		<item name="ammoShotgunSlugShock" count="6,25" prob="0.2"/>	
+		<item name="ammoArrowShock" count="20,60"/>	
+		<item name="ammoCrossbowBoltShock" count="20,60"/>
+		<item name="thrownGrenadeContactShock" count="5,20"/>
+		<item name="ammoRocketShock" count="5,20"/>
+		<item name="resourceShockBulletTip" count="20,60"/>
+		<item name="resourceArrowHeadShock" count="20,60"/>	
+		<item name="resourceRocketTipShock" count="20,60"/>	
+	</trader_item_group>	
+	<trader_item_group name="ammoSoft">	
+		<item name="ammo9mmBulletSoft" count="40,150"/>
+		<item name="ammo762mmBulletSoft" count="40,150"/>
+		<item name="ammo44MagnumBulletSoft" count="15,60" prob="0.5"/>		
+		<item name="ammoShotgunSlugSoft" count="6,25" prob="0.2"/>	
+		<item name="thrownGrenadeContactSoft" count="5,20"/>
+		<item name="thrownGrenadeContactHoly" count="0,0" prob="0" />
+		<item name="ammoRocketSoft" count="5,20"/>
+		<item name="resourceSoftBulletTip" count="20,60"/>
+		<item name="resourceRocketTipSoft" count="20,60"/>	
+	</trader_item_group>
+</insertBefore>
+
+<!-- APPEND THE PERKS BOOK TO ADD THE EXOTIC AMMO BOOKS-->
+<append xpath="//trader_item_group[@name='perkBooks']">	
+		<item name="bookExoticAmmo9mm"/>			
+		<item name="bookExoticAmmo762mm"/>	
+		<item name="bookExoticAmmo44Magnum"/>
+		<item name="bookExoticAmmoSlugs"/>
+		<item name="bookExoticAmmoArrowsBolts"/>
+		<item name="bookExoticAmmoGrenadesRockets"/>
+		<item name="bookExoticAmmoJunkTurret"/>
+</append>
+
+<!--    ASK TRADERS TO SELL EXOTIC AMMO  -->
+<append xpath="//trader_info[@id='1' or @id='2' or @id='6' or @id='7' or @id='8']/trader_items"> 
+    <item group="ammoGlass" count="1,2"/>
+	<item group="ammoFire" count="1,2"/>
+	<item group="ammoHighDensity" count="1,2"/>
+	<item group="ammoShock" count="1,2"/>	
+	<item group="ammoSoft" count="1,2"/>
+</append>
+
+<!-- <append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']"> 
+    <item group="ammoGlass" count="5,6"/>
+	<item group="ammoFire" count="5,6"/>
+	<item group="ammoHighDensity" count="5,6"/>	
+	<item group="ammoShock" count="5,6"/>
+	<item group="ammoSoft" count="5,6"/>
+	</append> -->
+
+
+</config>

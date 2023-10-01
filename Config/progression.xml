@@ -1,0 +1,77 @@
+<!--
+	Exotic Ammo by BoxTurtle Games
+	What you can can do:
+		-Change this mod however you want
+		-Redistribute this mod as part of a modpack (give credit :) )
+		-Share with friends
+	What you cannot do:
+		-Reupload to any site and take credit as the original author
+		-Make money from this mod
+-->
+<config>
+<append xpath="//skills">
+    <book_group name="skillExoticAmmo" parent="attBooks" name_key="perkExoticAmmo0Name" desc_key="perkExoticAmmo0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_explosion">
+	<effect_group>
+	</effect_group>
+	</book_group>
+</append>
+<append xpath="//perks">
+    <!-- *** EXOTIC_AMMO_VOLUME_01_9MM -->
+	<book name="perkExoticAmmo9mm" parent="skillExoticAmmo" max_level="1" base_skill_point_cost="0" name_key="bookExoticAmmo9mm" desc_key="perkExoticAmmo9mmDesc" long_desc_key="perkExoticAmmo9mmLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo9mmBulletGlass,ammo9mmBulletFire,ammo9mmBulletHighDensity,ammo9mmBulletShock,ammo9mmBulletSoft"/>
+		</effect_group>
+	</book>
+    <!-- *** EXOTIC_AMMO_VOLUME_02_7.62MM -->
+	<book name="perkExoticAmmo762mm" parent="skillExoticAmmo" max_level="1" base_skill_point_cost="0" name_key="bookExoticAmmo762mm" desc_key="perkExoticAmmo762mmDesc" long_desc_key="perkExoticAmmo762mmLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo762mmBulletGlass,ammo762mmBulletFire,ammo762mmBulletHighDensity,ammo762mmBulletShock,ammo762mmBulletSoft"/>
+		</effect_group>
+	</book>
+	<!-- *** EXOTIC_AMMO_VOLUME_03_44MAGNUM -->
+	<book name="perkExoticAmmo44Magnum" parent="skillExoticAmmo" max_level="1" base_skill_point_cost="0" name_key="bookExoticAmmo44Magnum" desc_key="perkExoticAmmo44MagnumDesc" long_desc_key="perkExoticAmmo44MagnumLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo44MagnumBulletGlass,ammo44MagnumBulletFire,ammo44MagnumBulletHighDensity,ammo44MagnumBulletShock,ammo44MagnumBulletSoft"/>
+		</effect_group>
+	</book>
+	<!-- *** EXOTIC_AMMO_VOLUME_04_SLUGS-->
+	<book name="perkExoticAmmoSlugs" parent="skillExoticAmmo" max_level="1" base_skill_point_cost="0" name_key="bookExoticAmmoSlugs" desc_key="perkExoticAmmoSlugsDesc" long_desc_key="perkExoticAmmoSlugsLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoShotgunSlugGlass,ammoShotgunSlugFire,ammoShotgunSlugHighDensity,ammoShotgunSlugShock,ammoShotgunSlugSoft"/>
+		</effect_group>
+	</book>
+	<!-- *** EXOTIC_AMMO_VOLUME_05_ARROWS_BOLTS -->
+	<book name="perkExoticAmmoArrowsBolts" parent="skillExoticAmmo" max_level="1" base_skill_point_cost="0" name_key="bookExoticAmmoArrowsBolts" desc_key="perkExoticAmmoArrowsBoltsDesc" long_desc_key="perkExoticAmmoArrowsBoltsLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoArrowGlass,ammoCrossbowBoltGlass,ammoArrowFire,ammoCrossbowBoltFire,ammoArrowShock,ammoCrossbowBoltShock"/>
+		</effect_group>
+	</book>
+	<!-- *** EXOTIC_AMMO_VOLUME_06_GRENADES_ROCKETS -->
+	<book name="perkExoticAmmoGrenadesRockets" parent="skillExoticAmmo" max_level="1" base_skill_point_cost="0" name_key="bookExoticAmmoGrenadesRockets" desc_key="perkExoticAmmoGrenadesRocketsDesc" long_desc_key="perkExoticAmmoGrenadesRocketsLongDesc">
+		<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="thrownGrenadeContactGlass,thrownGrenadeContactFire,thrownGrenadeContactHighDensity,thrownGrenadeContactShock,thrownGrenadeContactSoft,ammoRocketGlass,ammoRocketFire,ammoRocketHighDensity,ammoRocketShock,ammoRocketSoft,resourceRocketTipGlass,resourceRocketTipFire,resourceRocketTipShock,resourceRocketTipSoft"/>
+		</effect_group>
+	</book>
+	<!-- *** EXOTIC_AMMO_VOLUME_07_JUNK_TURRET -->
+	<book name="perkExoticAmmoJunkTurret" parent="skillExoticAmmo" max_level="1" base_skill_point_cost="0" name_key="bookExoticAmmoJunkTurret" desc_key="perkExoticAmmoJunkTurretDesc" long_desc_key="perkExoticAmmoJunkTurretLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoJunkTurretGlass,ammoJunkTurretFire,ammoJunkTurretHighDensity,ammoJunkTurretShock,ammoJunkTurretSoft"/>
+		</effect_group>
+	</book>	
+	<!-- *** 7/7 EXOTIC_AMMO_COMPLETE -->
+	<book name="perkExoticAmmoComplete" parent="skillExoticAmmo" max_level="1" base_skill_point_cost="0"  desc_key="perkExoticAmmoCompleteDesc" long_desc_key="perkExoticAmmoCompleteLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle9mmBulletGlass,
+			ammoBundle44MagnumBulletGlass,ammoBundle762mmBulletGlass,ammoBundleShotgunSlugGlass,
+			ammoBundleArrowGlass,ammoBundleCrossbowBoltGlass,ammoBundleJunkTurretGlass,ammoBundle9mmBulletFire,ammoBundle762mmBulletFire,ammoBundle44MagnumBulletFire,ammoBundleShotgunSlugFire,ammoBundleJunkTurretFire,ammoBundle9mmBulletHighDensity,ammoBundle762mmBulletHighDensity,ammoBundle44MagnumBulletHighDensity,ammoBundleShotgunSlugHighDensity,ammoBundleJunkTurretHighDensity,ammoBundle9mmBulletShock,ammoBundle762mmBulletShock,ammoBundle44MagnumBulletShock,ammoBundleShotgunSlugShock,ammoBundleArrowShock,ammoBundleCrossbowBoltShock,ammoBundleJunkTurretShock,ammoBundle9mmBulletSoft,ammoBundle762mmBulletSoft,ammoBundle44MagnumBulletSoft,ammoBundleShotgunSlugSoft,ammoBundleJunkTurretSoft"/>
+		</effect_group>
+	</book>
+	<!-- *** EXOTIC_AMMO_PROJECTILES -->
+	<book name="perkExoticAmmoProjectiles" max_level="1" base_skill_point_cost="0" desc_key="perkExoticAmmoProjectilesDesc" long_desc_key="perkExoticAmmoProjectilesLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceGlassBulletTip,resourceArrowHeadGlass,resourceFireBulletTip,resourceShockBulletTip,resourceArrowHeadShock,resourceSoftBulletTip"/>
+		</effect_group>
+	</book>
+</append>
+
+</config>
